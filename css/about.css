@@ -11,7 +11,7 @@
   
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 120px repeat(2, 1fr);
+    grid-template-rows: 120px repeat(3, 1fr);
 }
 .main .about-section{
     background-image:linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.8)),  url("/images/about-bg.jpg");
@@ -89,6 +89,53 @@
 .main .about-section .about-content-container .about-text-container img{
     width: 200px;
     height: 50px;
+}
+.main .team-section{
+    text-align: center;
+    margin: 0 100px;
+    grid-row: 3/4;
+}
+.main .team-section h1{
+    padding: 50px 0;
+    color: var(--clr-text);
+    font-size: 3rem;
+}
+.main .team-section h1 span{
+    color: var(--clr-primary);
+}
+.main .team-section .team-cards-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main .team-section .team-cards-container .card{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 20px;
+}
+.main .team-section .team-cards-container .card img{
+    height: auto;
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+}
+.main .team-section .team-cards-container .card h1{
+    color: var(--clr-bg);
+}
+.main .team-section .team-cards-container .card a{
+    padding: 10px 20px;
+    background-color: black;
+    color: var(--clr-text);
+    border-radius: 20px;    
+    font-size: 15px;
+    font-weight: var(--fw-md);
+}
+.main .team-section .team-cards-container .card a:hover{
+    background-color: white;
+    color: black;
+}
+.main .footer-section{
+    grid-row: 4/5;
 }
 
   /* Tablet/Mobile */

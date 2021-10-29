@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;900&display=swap');
+
+@import "./varibles.css";
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    font-family: var(--font-family);
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        white 0%,
+        white 40%,
+        black 40%,
+        black 100%
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main h1.name{
+    padding-bottom: 50px;
+}
+.main .card-container{
+    background-color: var(--clr-text);
+    height: auto;
+    width: 1000px;
+    border-radius: 10px;
+
+    display: flex;
+}
+.main .card-container img{
+    border-radius: 10px 0 0 10px;
+}
+.main .card-container .text-container{
+    margin: 50px ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.main .card-container .text-container h1 span{
+    font-weight: var(--fw-md);
+}
+.main .card-container .text-container h2{
+    font-size: var(--fs-md);
+    font-weight: var(--fw-md);
+}
+.main .card-container .text-container button{
+    width: 130px;
+    height: 30px;
+    background-color: var(--clr-bg);
+    color: var(--clr-text);
+    text-transform: capitalize;
+}
+.main .card-container .text-container button:hover{
+    border: .5px solid black;
+    color: black;
+    background-color: white;
+    transition: ease 200ms;
+}
+.main a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: var(--fw-md);
+}
+.main i{
+    padding-right: 10px;
+    font-weight: 900;
+}
