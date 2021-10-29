@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;900&display=swap');
+
+@import "./varibles.css";
+@import "./nav.css";
+@import "./home.css";
+@import "./footer.css";
+@import "./default.css";
+
+.main{
+    height: 100vh;
+    font-family: var(--font-family);
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px calc(100vh - 120px) 1fr;
+}
+
+
+

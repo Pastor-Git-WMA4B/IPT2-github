@@ -1,0 +1,135 @@
+/* ------nav-section start-------- */
+.main .nav-section{
+    grid-row: 1/2;
+    height: 120px;
+    padding: 25px 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+.main .nav-section .logo-container{
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+}
+.main .nav-section .logo-container a{
+    padding-left: 10px;
+    font-size: 3rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-text);
+}
+.main .nav-section .logo-container a span{
+    color: var(--clr-primary);
+}
+.main .nav-section .icon-container.hide-desktop{
+    display: none;
+}
+.main .nav-section .menu-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.main .nav-section .menu-container li a{
+    font-size: 25px;
+    color: var(--clr-text);
+    margin: 0 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .nav-section .menu-container li a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--clr-primary);
+    transform: scale(0, 1);
+    transition: transform 200ms ease-in;
+}
+.main .nav-section .menu-container li a:hover::after {
+    transform: scale(1, 1);
+}
+.main .nav-section .menu-container li span {
+    display: block;
+    width: 2px;
+    height: 50px;
+    background: var(--clr-primary);
+}
+.main .nav-section .menu-container li:nth-child(6) a::after,
+.main .nav-section .menu-container li:nth-child(7) a::after {
+    all: unset;
+}
+.main .nav-section .menu-container li:nth-child(6) a,
+.main .nav-section .menu-container li:nth-child(7) a {
+    margin-right: -10px;
+}
+/* ------nav-section end---------- */
+/* Tablet */
+@media (max-width: 992px) {
+    .main .nav-section {
+      position: fixed;
+      width: 100%;
+      height: 120px;
+      margin: 0;
+      background: #000000;
+      border-bottom: 1px solid var(--clr-primary);
+    }
+    .main .nav-section .icon-container i{
+      color: var(--clr-primary);
+      cursor: pointer;
+      font-size: 3rem;
+    }
+    .main .nav-section .icon-container.hide-desktop{
+        display: block;
+    } 
+    .main .nav-section .menu-container {
+      position: absolute;
+      top: 120px;
+      left: 0;
+      height: 200px;
+      width: 100%;
+      display: grid;
+      transform: scale(1, 0);
+      transform-origin: top;
+    }
+    .main .nav-section .menu-container.show {
+      transform: scale(1, 1);
+      transition: transform 500ms ease;
+    }
+    .main .nav-section .menu-container li:nth-child(5),
+    .main .nav-section .menu-container li:nth-child(6),
+    .main .nav-section .menu-container li:nth-child(7) {
+      display: none;
+    }
+    .main .nav-section .menu-container li {
+      height: 100%;
+    }
+    .main .nav-section .menu-container li a {
+      height: 100%;
+      justify-content: center;
+    }
+    .main .nav-section .menu-container li:hover {
+      background: var(--clr-primary);
+    }
+    .main .nav-section .menu-container li a::after {
+      all: unset;
+    }
+  }
+  
+  /* Tablet/Mobile Large */
+  @media (max-width: 768px) {
+  }
+  /* Mobile */
+  @media (max-width: 576px) {
+    .main .nav-section .logo-container {
+      margin-left: -50px;
+    }
+    .main .nav-section .icon-container {
+      margin-right: -50px;
+      cursor: pointer;
+    }
+  }

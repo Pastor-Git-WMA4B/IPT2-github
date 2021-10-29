@@ -1,0 +1,34 @@
+/* --------Variables-------- */
+:root {
+    /* COLORS */
+    --clr-bg: #000000;
+    --clr-primary: #dac404;
+    --clr-text: #ffffff;
+    --clr-mute: rgba(82, 82, 82, 0.5);
+    --clr-primaryHover: #dac50480;
+  
+    --box-shadow-sm: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+    --border-radius: 15px;
+  
+    /* SPACING */
+    --sp-xs: 0.25rem;
+    --sp-sm: 0.5rem;
+    --sp-md: 1rem;
+    --sp-lg: 1.5rem;
+    --sp-xl: 2rem;
+    --sp-2xl: 3rem;
+    --sp-3xl: 4rem;
+  
+    /* TYPOGRAPHY */
+    --font-family: "Bitter", sans-serif;
+  
+    --fs-xl: 2rem; /* 32px */
+    --fs-lg: 1.5rem; /* 24px */
+    --fs-md: 1.125rem; /* 18px */
+    --fs-sm: 1rem; /* 16px */
+    --fs-xs: 0.875rem; /* 14px */
+  
+    --fw-reg: 400;
+    --fw-md: 600;
+    --fw-bold: 900;
+  }
